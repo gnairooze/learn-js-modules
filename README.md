@@ -1,2 +1,2 @@
-# learn-js-modules
-Learn how to develop JS modules
+# learn-modular-js
+Learn how to develop modular JS
