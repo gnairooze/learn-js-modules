@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="site.css">
+    <title>Learn Modular JS</title>
+</head>
+<body>
+    <h1>Learn Modular JS</h1>
+    <a href="https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f" target="_blank">LearnCode.Academy Modular Javascript (7 videos)</a>
+    
+    <div id="statsModule" class="hero-unit">
+        <h2>Stats</h2>
+        <div id="stats">
+            <script id="stats-template" type="text/template">
+                <span>People: <strong>{{count}}</strong></span>
+            </script>
+        </div>
+    </div>
+    <div id="peopleModule">
+        <h2>People</h2>
+        <input placeholder="name" type="text">
+        <button id="addPerson">Add Person</button>
+        <ul id="people">
+            <script id="people-template" type="text/template">
+                {{#people}}
+                    <li>
+                        <span>{{.}}</span>
+                        <i class="del">X</i>
+                    </li>
+                {{/people}}
+            </script>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="pubsub.js"></script>
+    <script src="stats.js"></script>
+    <script src="site2.js"></script>
+</body>
+</html>
